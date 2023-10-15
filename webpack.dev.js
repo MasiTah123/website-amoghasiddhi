@@ -10,7 +10,7 @@ module.exports = merge(common, {
       directory: path.join(__dirname, 'public'),
     },
     open: true,
-    port: 9000,
+    port: 8000,
     client: {
       overlay: {
         errors: true,
