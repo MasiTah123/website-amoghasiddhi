@@ -60,7 +60,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, './src/template.html'),
+      template: path.resolve(__dirname, './src/index.html'),
     }),
     new CleanWebpackPlugin(), 
     new CopyWebpackPlugin({
