@@ -49,19 +49,19 @@ module.exports = merge(common, {
           },
         ],
       },
-      {
-        test: /\.css$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { sourceMap: true } },
-        ],
-      },
+      // {
+      //   test: /\.css$/i,
+      //   use: [
+      //     MiniCssExtractPlugin.loader,
+      //     { loader: 'css-loader', options: { sourceMap: true } },
+      //   ],
+      // },
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: '[name].[contenthash].css',
+    // }),
     new FixStyleOnlyEntriesPlugin()
   ],
 });
